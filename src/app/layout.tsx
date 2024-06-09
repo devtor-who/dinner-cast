@@ -3,6 +3,7 @@ import './globals.css';
 import localFont from 'next/font/local';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'DinnerCast',
@@ -37,6 +38,11 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "f931931729bb427b925a54df1d5cb99f"}'
+        />
       </body>
     </html>
   );
