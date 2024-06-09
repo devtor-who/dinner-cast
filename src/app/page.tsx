@@ -1,7 +1,11 @@
+import { ModeToggle } from '@/components/theme-toggle';
+
+export const runtime = 'edge';
+
 export default function Home() {
   return (
     <main>
-      <div>Hello world!</div>
+      <ModeToggle></ModeToggle>
     </main>
   );
 }
