@@ -4,14 +4,21 @@ import localFont from 'next/font/local';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
 import Script from 'next/script';
+import { THEME_COLOR } from '@/config/constants';
+import { publicEnv } from '@/config/env';
 
 export const metadata: Metadata = {
-  title: 'DinnerCast',
+  metadataBase: new URL(publicEnv.NEXT_PUBLIC_BASE_URL),
+  title: {
+    default: 'DinnerCast - Ai로 만드는 팟캐스트',
+    template: '%s | DinnerCast - Ai로 만드는 팟캐스트',
+  },
   description: 'Ai로 만드는 팟캐스트',
+  keywords: ['DinnerCast', 'Podcast', '팟캐스트', 'AI', 'ai', 'Ai'],
 };
 
 export const viewport: Viewport = {
-  themeColor: '#fff',
+  themeColor: THEME_COLOR,
 };
 
 const SpoqaFont = localFont({

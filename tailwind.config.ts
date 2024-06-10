@@ -17,6 +17,15 @@ const config = {
       fontFamily: {
         spoqa: ['var(--font-spoqa)', ...fontFamily.sans],
       },
+      fontSize: {
+        xs: ['0.75rem', '1.5'],
+        sm: ['0.875rem', '1.5'],
+        base: ['1rem', '1.5'],
+        lg: ['1.125rem', '1.5'],
+        xl: ['1.25rem', '1.5'],
+        '2xl': ['1.5rem', '1.5'],
+        '3xl': ['2rem', '1.5'],
+      },
       colors: {
         white: {
           1: '#FFFFFF',
@@ -32,9 +41,6 @@ const config = {
           4: '#252525',
           5: '#2E3036',
           6: '#24272C',
-        },
-        gray: {
-          1: '#71788B',
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
