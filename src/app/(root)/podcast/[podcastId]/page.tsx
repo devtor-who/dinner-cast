@@ -1,5 +1,5 @@
 export const runtime = 'edge';
 
-export default function Page({ params }: { params: { podcastId: string } }) {
+export default function Page({}: { params: { podcastId: string } }) {
   return <section></section>;
 }
