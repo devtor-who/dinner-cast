@@ -1,9 +1,9 @@
 import { drizzle } from 'drizzle-orm/libsql';
 import { createClient } from '@libsql/client/web';
-import { getServerEnv } from '@/config/env';
+import { serverEnv } from '@/config/env';
 
 export const getDB = () => {
-  const { TURSO_AUTH_TOKEN, TURSO_DATABASE_URL } = getServerEnv();
+  const { TURSO_AUTH_TOKEN, TURSO_DATABASE_URL } = serverEnv;
 
   const turso = createClient({
     url: TURSO_DATABASE_URL!,
