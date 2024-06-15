@@ -2,6 +2,9 @@ import { Compass, Home, Mic } from 'lucide-react';
 
 export const THEME_COLOR = '#6e73a6';
 
+export const DEFAULT_IMAGE_BLUR_DATA_URL =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOsa2yqBwAFCAICLICSyQAAAABJRU5ErkJggg==';
+
 export const ROOT_SIDEBAR_LINKS = [
   { route: '/', label: '홈', Icon: () => <Home /> },
   { route: '/discover', label: '찾아보기', Icon: () => <Compass /> },

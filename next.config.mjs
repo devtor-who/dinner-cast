@@ -4,6 +4,7 @@ const nextConfig = {
     reactCompiler: true,
   },
   images: {
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       { hostname: 'lovely-flamingo-139.convex.cloud', protocol: 'https' }, //
     ],
