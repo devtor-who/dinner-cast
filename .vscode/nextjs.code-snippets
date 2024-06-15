@@ -6,7 +6,7 @@
     "body": [
       "export const runtime = 'edge';",
       "",
-      "export default function Page() {",
+      "export default async function Page() {",
       "  return <${1:section}>$3</$1>",
       "};",
     ],
