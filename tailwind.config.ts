@@ -17,6 +17,9 @@ const config = {
       fontFamily: {
         spoqa: ['var(--font-spoqa)', ...fontFamily.sans],
       },
+      screens: {
+        xs: '475px',
+      },
       fontSize: {
         xs: ['0.75rem', '1.5'],
         sm: ['0.875rem', '1.5'],

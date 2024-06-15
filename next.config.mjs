@@ -3,6 +3,11 @@ const nextConfig = {
   experimental: {
     reactCompiler: true,
   },
+  images: {
+    remotePatterns: [
+      { hostname: 'lovely-flamingo-139.convex.cloud', protocol: 'https' }, //
+    ],
+  },
   async rewrites() {
     return [
       {
