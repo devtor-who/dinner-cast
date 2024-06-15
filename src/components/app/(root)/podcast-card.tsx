@@ -1,6 +1,6 @@
 'use client';
 
-import { PODCAST_DEMO_DATA_ITEM } from '@/config/constants';
+import type { PODCAST_DEMO_DATA_ITEM } from '@/config/constants';
 import Image from 'next/image';
 
 type Props = PODCAST_DEMO_DATA_ITEM & {};
