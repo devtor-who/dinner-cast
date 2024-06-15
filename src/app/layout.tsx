@@ -33,6 +33,7 @@ const SpoqaFont = localFont({
   variable: '--font-spoqa',
   style: 'normal',
   display: 'swap',
+  preload: true,
 });
 
 export default function RootLayout({
