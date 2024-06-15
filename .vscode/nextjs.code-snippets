@@ -23,4 +23,10 @@
       "};",
     ],
   },
+  "Edge Runtime": {
+    "scope": "typescript",
+    "prefix": "edgeruntime$",
+    "description": "Nextjs edge runtime",
+    "body": ["export const runtime = 'edge'"],
+  },
 }

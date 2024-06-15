@@ -1,18 +1,8 @@
 import { z } from 'zod';
 import { getRequestContext } from '@cloudflare/next-on-pages';
 
-const serverEnvSchema = z.object({
-  TURSO_DATABASE_URL: z.coerce.string(),
-  TURSO_AUTH_TOKEN: z.coerce.string(),
-});
-
-export const getServerEnv = async () => {
-  const { TURSO_AUTH_TOKEN, TURSO_DATABASE_URL } = getRequestContext().env;
-
-  return serverEnvSchema.parse({
-    TURSO_DATABASE_URL,
-    TURSO_AUTH_TOKEN,
-  });
+export const getServerEnv = () => {
+  return getRequestContext().env;
 };
 
 const publicEnvSchema = z.object({

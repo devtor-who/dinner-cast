@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Script from 'next/script';
 import { THEME_COLOR } from '@/config/constants';
 import { publicEnv } from '@/config/env';
+import { SessionProvider } from 'next-auth/react';
 
 export const metadata: Metadata = {
   metadataBase: new URL(publicEnv.NEXT_PUBLIC_BASE_URL),
@@ -43,7 +44,7 @@ export default function RootLayout({
     <html className={cn(SpoqaFont.variable)} lang="ko" suppressHydrationWarning>
       <body className="font-spoqa">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <SessionProvider>{children}</SessionProvider>
         </ThemeProvider>
 
         <Script

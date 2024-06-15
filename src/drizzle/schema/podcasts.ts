@@ -8,7 +8,9 @@ export const podcasts = sqliteTable(
     id: integer('id', { mode: 'number' }).primaryKey({ autoIncrement: true }),
     title: text('title').notNull(),
     description: text('description').notNull(),
-    userId: integer('userId').notNull(),
+    userId: text('userId')
+      .notNull()
+      .references(() => users.id),
     author: blob('author', { mode: 'json' }).$type<string[]>().notNull(),
     audioUrl: text('audioUrl'),
     audioDuration: integer('audioDuration', { mode: 'number' }),
