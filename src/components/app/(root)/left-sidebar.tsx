@@ -4,13 +4,13 @@ import { ROOT_SIDEBAR_LINKS } from '@/config/constants';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LogoImage } from '../LogoImage';
+import { LogoImage } from '../logo-image';
 
 export function LeftSidebar() {
   const pathname = usePathname();
 
   return (
-    <section className="sticky left-0 top-0 flex w-44 flex-col justify-between border-none bg-black-1 pt-8 text-white-1 max-md:hidden lg:w-64 lg:pl-8">
+    <aside className="sticky left-0 top-0 flex w-44 flex-col justify-between border-none bg-black-1 pt-8 text-white-1 max-md:hidden lg:w-64 lg:pl-8">
       <nav className="flex flex-col gap-6">
         <Link href={'/'} className="flex items-center gap-x-3 pb-10 max-lg:justify-center">
           <LogoImage></LogoImage>
@@ -34,6 +34,6 @@ export function LeftSidebar() {
           </Link>
         ))}
       </nav>
-    </section>
+    </aside>
   );
 }

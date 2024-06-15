@@ -1,0 +1,26 @@
+{
+  "Next Page": {
+    "scope": "typescriptreact",
+    "prefix": "nextpage$",
+    "description": "Nextjs page component",
+    "body": [
+      "export const runtime = 'edge';",
+      "",
+      "export default function Page() {",
+      "  return <${1:section}>$3</$1>",
+      "};",
+    ],
+  },
+  "Next Component": {
+    "scope": "typescriptreact",
+    "prefix": "nextcomponent$",
+    "description": "Nextjs component",
+    "body": [
+      "'use client'",
+      "",
+      "export function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}() {",
+      "  return <${2:div}>$4</$2>",
+      "};",
+    ],
+  },
+}

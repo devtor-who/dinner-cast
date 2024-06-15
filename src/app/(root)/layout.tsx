@@ -1,7 +1,7 @@
-import { LeftSidebar } from '@/components/app/(root)/LeftSidebar';
-import { MobileNav } from '@/components/app/(root)/MoblieNav';
-import { RightSidebar } from '@/components/app/(root)/RightSidebar';
-import { LogoImage } from '@/components/app/LogoImage';
+import { LeftSidebar } from '@/components/app/(root)/left-sidebar';
+import { MobileNav } from '@/components/app/(root)/mobile-nav';
+import { RightSidebar } from '@/components/app/(root)/right-sidebar';
+import { LogoImage } from '@/components/app/logo-image';
 
 export const runtime = 'edge';
 
@@ -21,7 +21,8 @@ export default async function Layout({
               <LogoImage></LogoImage>
               <MobileNav></MobileNav>
             </article>
-            <article>{children}</article>
+
+            <section>{children}</section>
           </section>
         </main>
 

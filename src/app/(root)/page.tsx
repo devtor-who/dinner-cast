@@ -1,5 +1,9 @@
 export const runtime = 'edge';
 
 export default function Page() {
-  return <section>홈화면</section>;
+  return (
+    <section>
+      <h1 className="text-xl font-bold">홈화면</h1>
+    </section>
+  );
 }
