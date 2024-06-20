@@ -17,7 +17,7 @@ export function ImageWithPlaceholder({ className, onLoad, alt, ...props }: Compo
   return (
     <Image
       alt={alt || 'Image'}
-      className={cn(className, isLoading ? 'duration-[2s] animate-pulse' : '')}
+      className={cn(className, isLoading ? 'animate-pulse duration-1000' : '')}
       placeholder="blur"
       blurDataURL={DEFAULT_IMAGE_BLUR_DATA_URL}
       onLoad={onLoadImage}

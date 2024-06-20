@@ -22,7 +22,7 @@ export default async function Layout({
               <MobileNav></MobileNav>
             </article>
 
-            <section>{children}</section>
+            <section className="py-6">{children}</section>
           </section>
         </main>
 

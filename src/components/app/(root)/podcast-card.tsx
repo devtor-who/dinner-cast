@@ -20,10 +20,8 @@ export function PodcastCard({ imgURL, title, description }: Props) {
         </div>
 
         <figcaption>
-          <h1 className="truncate text-base font-bold">{title}</h1>
-          <h2 className="truncate text-sm font-normal text-secondary-foreground/65">
-            {description}
-          </h2>
+          <h1 className="truncate text-lg font-bold">{title}</h1>
+          <h2 className="truncate text-sm font-normal text-secondary-foreground/65">{description}</h2>
         </figcaption>
       </figure>
     </div>
